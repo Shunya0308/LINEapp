@@ -27,7 +27,7 @@ def auth():
     ]
 
     #スプレッドシートのURLのd/以降をコピペ
-    SP_SHEET_KEY = '1m2srseavfHJANTcvlfnrGyjYvAsMvL1W-Nra3Fd_zXs'
+    SP_SHEET_KEY = 'SP_SHEET_KEY'
     #sheet名記載（任意）
     SP_SHEET = 'timesheet'
 
@@ -64,8 +64,8 @@ def punch_out():
     print('勤怠（退勤）登録完了しました')
 
 app = Flask(__name__)
-line_bot_api = LineBotApi('WFGRlHaoM5/BaDc8ZimGbKgKezDre+XpuKlfHoH5DaI9MTQebAO4kQsKDqKLW7veLOXXIfHX/Qicbact7mGxfVl/l4u+Rgop7XaAzRcRTRydNUyyHW7DR1q6JB8ineS8glR2beNQMKb5gedr/Y9XugdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('9fb9674da66fa2ac0b4df1c5ce257cc1')
+line_bot_api = LineBotApi('Channel Access Token')
+handler = WebhookHandler('Channel Secret')
 
 @app.route("/")
 def hello_world():
